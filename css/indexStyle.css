@@ -13,7 +13,6 @@ body {
 
 #header {
 	width: 100%;
-	/*padding: 30px;*/
 	display: grid;
 	grid-template-columns: 20% 80%;
 	background-color: white;
@@ -74,7 +73,6 @@ body {
 
 
 #topNav {
-	background-color: red;
 	display: grid;
 	grid-template-columns: repeat(5, auto); 
 	/*justify-items: center;*/
@@ -82,10 +80,35 @@ body {
 
 
 #topNav a{
-	border: 1px solid black;
-	text-align: center;
+/*	border: 1px solid black;
+	text-align: center;*/
+	font-weight: bold; 
+	text-align: center; 
+	color:#FFF; 
+	background-color: #69F;	 
 	padding-top: 12px;
+	text-decoration: none;
+	border-left:2px solid #FFF; 
+	border-radius: 10px;
+	font-family:arial, helvetica, sans-serif; 
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9CF), color-stop(100%, #CCC));
+	background-image: -webkit-linear-gradient(top, #9CF, #CCC);
+	background-image: -moz-linear-gradient(top, #9CF, #CCC);
+	background-image: -ms-linear-gradient(top, #9CF, #CCC);
+	background-image: -o-linear-gradient(top, #9CF, #CCC);
+	background-image: linear-gradient(top, #9CF, #CCC);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#9CF, endColorstr=#CCC);	
 }
+
+#topNav a:hover {
+	 border: 1px solid #450111; color: #FFF; background-color: #309;
+	 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CCC), color-stop(100%, #036));
+	 background-image: -webkit-linear-gradient(top, #CCC, #036);
+	 background-image: -moz-linear-gradient(top, #CCC, #036);
+	 background-image: -ms-linear-gradient(top, #CCC, #036);
+	 background-image: -o-linear-gradient(top, #CCC, #036);
+	 background-image: linear-gradient(top, #CCC, #036);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#CCC, endColorstr=#036);}
+
 
 #spacer {
 	grid-column: 1/3;
@@ -94,10 +117,6 @@ body {
 	margin: 0;
 	}
 
-#cart img {
-
-	
-}
 
 #slider {
 	display: grid;
@@ -106,28 +125,39 @@ body {
 	
 }
 
-#slider img {
-	width: 80%;
+#slider #sliderImg img {
+	width: 100%;
 	height: 300px;
 	justify-self: center;
 }
 
-
+#slider #cart img {
+	width: 100px;
+	height: 100px
+	justify-self: end;
+	align-self: center;
+	
+}
 
 /* main content styles */
 #pageContent {
-	background-color: #b7dfdb;
+	background-color:  ##0ea0ca;
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	grid-gap: 1rem;
 }
 
 #heading{
+	background-color: #b7dfdb;
 	grid-column: 1/4;
-	background-color:  ##0ea0ca;
+		grid-gap: 0;
+
+}
+
+#heading h2 {
 	margin: 0;
 	padding: 0;
-
+	text-align: center;
 }
 
 #pageContent img{
